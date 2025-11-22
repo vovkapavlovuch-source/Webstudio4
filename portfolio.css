@@ -54,8 +54,12 @@ body {
   padding-bottom: 34px;
 }
 
-.catalog-list
+.catalog-item
 {
+  max-width: 575px;
+}
+
+.catalog-list {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -69,10 +73,17 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  max-width: 575px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: #F5F4FA;
 }
 
 .catalog-page:hover {
-  color: #2196f3;
+  background-color: #2196f3;
+  color: #fff;
 }
 
 .portfolio {
@@ -100,14 +111,14 @@ body {
   color: #757575;
 }
 
-.portfolio-box
-{
-  margin: 20px 24px 24px 20px;
-
+.portfolio-box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.portfolio-list
-{
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 34px;
@@ -146,8 +157,7 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-list
-{
+.footer-list {
   display: flex;
   flex-direction: column;
   gap: 9px;

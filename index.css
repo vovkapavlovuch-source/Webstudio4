@@ -148,7 +148,12 @@ body {
 .team {
   background: #F5f4fa;
   padding-top: 94px;
-  padding-bottom: 124px;
+  padding-bottom: 94px;
+}
+
+.team-item
+{
+  background-color: #ffffff;
 }
 
 .team-list
@@ -169,7 +174,6 @@ body {
 .team-photo {
   width: 270px;
   height: 260px;
-  background-color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -188,6 +192,7 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -242,5 +247,5 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-right: 15px;
 }
