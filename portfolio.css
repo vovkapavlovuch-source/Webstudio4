@@ -91,6 +91,11 @@ body {
   padding-bottom: 114px;
 }
 
+.portfolio-item
+{
+   flex-basis: calc((100% - 60px) / 3);
+}
+
 .portfolio-photo {
   width: 370px;
   height: 294px;
