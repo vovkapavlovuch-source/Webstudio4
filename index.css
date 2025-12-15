@@ -53,6 +53,9 @@ body {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url("./images/background-hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
  
 .hero-title {
