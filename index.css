@@ -121,6 +121,58 @@ body {
   color: #757575;
 }
 
+.company-satellite::before
+{
+  content: "";
+  background-color: #F5F4FA;
+  background-image: url("./images/satellite-dish.png");
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.company-clock::before
+{
+  content: "";
+  background-color: #F5F4FA;
+  background-image: url("./images/clock.png");
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.company-diagram::before
+{
+  content: "";
+  background-color: #F5F4FA;
+  background-image: url("./images/diagram.png");
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.company-astronaut::before
+{
+  content: "";
+  background-color: #F5F4FA;
+  background-image: url("./images/astronaut.png");
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
 .about {
   padding-bottom: 94px;
 }
