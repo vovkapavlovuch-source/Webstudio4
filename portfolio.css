@@ -54,8 +54,7 @@ body {
   padding-bottom: 34px;
 }
 
-.catalog-item
-{
+.catalog-item {
   max-width: 575px;
 }
 
@@ -79,7 +78,7 @@ body {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .catalog-page:hover {
@@ -91,9 +90,10 @@ body {
   padding-bottom: 114px;
 }
 
-.portfolio-item
-{
-   flex-basis: calc((100% - 60px) / 3);
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-photo {
