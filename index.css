@@ -38,11 +38,34 @@ body {
   gap: 50px;
 }
 
+.header-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.header-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-svg:hover {
+  fill: #2196f3;
+}
+
 .header-page {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
+  width: 122px;
 }
 
 .header-page:hover {
@@ -52,13 +75,14 @@ body {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("./images/background-hero.png");
+  background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("./images/background-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
 }
- 
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -96,14 +120,12 @@ body {
   padding-bottom: 94px;
 }
 
-.company-container
-{
+.company-container {
   display: flex;
   align-items: center;
 }
 
-.company-list
-{
+.company-list {
   display: flex;
   gap: 30px;
 }
@@ -125,10 +147,9 @@ body {
   color: #757575;
 }
 
-.company-satellite::before
-{
+.company-satellite::before {
   content: "";
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url("./images/satellite-dish.png");
   display: block;
   width: 270px;
@@ -138,10 +159,9 @@ body {
   margin-bottom: 30px;
 }
 
-.company-clock::before
-{
+.company-clock::before {
   content: "";
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url("./images/clock.png");
   display: block;
   width: 270px;
@@ -151,10 +171,9 @@ body {
   margin-bottom: 30px;
 }
 
-.company-diagram::before
-{
+.company-diagram::before {
   content: "";
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url("./images/diagram.png");
   display: block;
   width: 270px;
@@ -164,10 +183,9 @@ body {
   margin-bottom: 30px;
 }
 
-.company-astronaut::before
-{
+.company-astronaut::before {
   content: "";
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   background-image: url("./images/astronaut.png");
   display: block;
   width: 270px;
@@ -181,8 +199,7 @@ body {
   padding-bottom: 94px;
 }
 
-.about-list
-{
+.about-list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
@@ -202,19 +219,20 @@ body {
 }
 
 .team {
-  background: #F5f4fa;
+  background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.team-item
-{
+.team-item {
   background-color: #ffffff;
-  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 1px 0 rgba(0, 0, 0, 0.2),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
-.team-list
-{
+.team-list {
   display: flex;
   margin-top: 50px;
   gap: 30px;
@@ -250,6 +268,83 @@ body {
   text-align: center;
   color: #757575;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.team-list-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 42px;
+}
+
+.team-item-social:hover {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-social {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+}
+
+.team-social:hover {
+  fill: #fff;
+}
+
+.regular-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.regular {
+  padding-top: 86px;
+  padding-bottom: 110px;
+}
+
+.regular-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.regular-item {
+  border: 1px solid #afb1b8;
+}
+
+.regular-svg {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.regular-item:hover {
+  border-color: #2196f3;
+}
+
+.regular-svg:hover {
+  fill: #2196f3;
 }
 
 .footer {
@@ -284,8 +379,7 @@ body {
   margin-bottom: 9px;
 }
 
-.footer-list
-{
+.footer-list {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -297,6 +391,22 @@ body {
   line-height: 171%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-svg
+{
+  width: 20px;
+  height: 20px;
 }
 
 .container {
