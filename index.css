@@ -385,6 +385,31 @@ body {
   gap: 9px;
 }
 
+.footer-list-svg
+{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.footer-item-svg
+{
+  border-radius: 50%;
+  background-color: #ffffff10;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item-svg:hover{
+  border-radius: 50%;
+  background-color: #2196f3;
+  width: 44px;
+  height: 44px;
+}
+
 .footer-page {
   font-weight: 400;
   font-size: 14px;
@@ -393,6 +418,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-box
+{
+  margin-left: 70px;
+}
 
 .footer-title {
   font-family: "Raleway";
@@ -401,12 +430,20 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .footer-svg
 {
   width: 20px;
   height: 20px;
+  fill: #ffffff;
+}
+
+.container-svg
+{
+  display: flex;
+  align-items: baseline;
 }
 
 .container {

@@ -7,6 +7,38 @@ body {
   padding-bottom: 25px;
 }
 
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-page{
+    width: 122px;
+}
+
+
+.header-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.header-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.header-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-svg:hover {
+  fill: #2196f3;
+}
+
 .portfolio-container {
   display: flex;
   align-items: center;
@@ -92,7 +124,9 @@ body {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+  box-shadow:
+    1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+    0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -175,6 +209,54 @@ body {
   line-height: 171%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list-svg {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.footer-item-svg {
+  border-radius: 50%;
+  background-color: #ffffff10;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item-svg:hover {
+  border-radius: 50%;
+  background-color: #2196f3;
+  width: 44px;
+  height: 44px;
+}
+
+.footer-box {
+  margin-left: 70px;
+}
+
+.footer-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.container-svg {
+  display: flex;
+  align-items: baseline;
 }
 
 .container {
