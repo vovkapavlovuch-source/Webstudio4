@@ -213,9 +213,34 @@ body {
   color: #212121;
 }
 
+.about-item
+{
+  position: relative;
+}
+
 .about-photo {
   width: 370px;
   height: 294px;
+}
+
+.about-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  padding-top: 27px;
+}
+
+.about-text{
+  background-color: #2f303ab7;
+  width: 370px;
+  height: 70px;
 }
 
 .team {
@@ -385,15 +410,13 @@ body {
   gap: 9px;
 }
 
-.footer-list-svg
-{
+.footer-list-svg {
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
 
-.footer-item-svg
-{
+.footer-item-svg {
   border-radius: 50%;
   background-color: #ffffff10;
   width: 44px;
@@ -403,7 +426,7 @@ body {
   justify-content: center;
 }
 
-.footer-item-svg:hover{
+.footer-item-svg:hover {
   border-radius: 50%;
   background-color: #2196f3;
   width: 44px;
@@ -418,8 +441,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-box
-{
+.footer-box {
   margin-left: 70px;
 }
 
@@ -433,15 +455,13 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-svg
-{
+.footer-svg {
   width: 20px;
   height: 20px;
   fill: #ffffff;
 }
 
-.container-svg
-{
+.container-svg {
   display: flex;
   align-items: baseline;
 }
