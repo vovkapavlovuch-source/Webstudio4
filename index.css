@@ -42,22 +42,30 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .header-smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: #757575;
 }
 
-.header-svg {
+.header-item-svg {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header-svg:hover {
-  fill: #2196f3;
+.header-item-svg:hover {
+  .header-contact {
+    color: #2196f3;
+  }
+  .header-envelope,
+  .header-smartphone {
+    fill: #2196f3;
+  }
 }
 
 .header-page {
@@ -70,6 +78,14 @@ body {
 
 .header-page:hover {
   color: #2196f3;
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  width: 122px;
 }
 
 .hero {
@@ -213,8 +229,7 @@ body {
   color: #212121;
 }
 
-.about-item
-{
+.about-item {
   position: relative;
 }
 
@@ -237,7 +252,7 @@ body {
   padding-top: 27px;
 }
 
-.about-text{
+.about-text {
   background-color: #2f303ab7;
   width: 370px;
   height: 70px;
@@ -292,7 +307,6 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
@@ -313,6 +327,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  .team-social {
+    fill: #fff;
+  }
 }
 
 .team-social {
@@ -322,10 +339,6 @@ body {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-}
-
-.team-social:hover {
-  fill: #fff;
 }
 
 .regular-title {
@@ -354,6 +367,13 @@ body {
   border: 1px solid #afb1b8;
 }
 
+.regular-item:hover {
+    border-color: #2196f3;
+  .regular-svg {
+    fill: #2196f3;
+  }
+}
+
 .regular-svg {
   width: 106px;
   height: 60px;
@@ -362,14 +382,6 @@ body {
   margin-bottom: 16px;
   margin-left: 32px;
   margin-right: 32px;
-}
-
-.regular-item:hover {
-  border-color: #2196f3;
-}
-
-.regular-svg:hover {
-  fill: #2196f3;
 }
 
 .footer {
@@ -416,7 +428,7 @@ body {
   gap: 10px;
 }
 
-.footer-item-svg {
+.footer-link {
   border-radius: 50%;
   background-color: #ffffff10;
   width: 44px;
