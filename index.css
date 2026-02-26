@@ -315,8 +315,19 @@ body {
 .team-list-social {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   margin-bottom: 42px;
+  margin-left: 32px;
+  gap: 10px;
+}
+
+.team-item-social {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #2195f300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-item-social:hover {
@@ -368,7 +379,7 @@ body {
 }
 
 .regular-item:hover {
-    border-color: #2196f3;
+  border-color: #2196f3;
   .regular-svg {
     fill: #2196f3;
   }
