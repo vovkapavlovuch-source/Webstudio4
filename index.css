@@ -425,6 +425,7 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 9px;
+  width: 231px;
 }
 
 .footer-list {
@@ -466,6 +467,7 @@ body {
 
 .footer-box {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-title {
@@ -489,12 +491,73 @@ body {
   align-items: baseline;
 }
 
+.footer-label {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  margin-top: 20px;
+  padding-left: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.footer-box-subcribe {
+  display: flex;
+  position: relative;
+}
+
+.footer-butn-subcribe {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-telegram {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-left: 10px;
 }
 
 /*  Модальне вікно */
@@ -512,11 +575,9 @@ body {
   opacity: 1;
 }
 
-.is-hidden
-{
+.is-hidden {
   opacity: 0;
   pointer-events: none;
-
 }
 
 .model {
@@ -549,8 +610,8 @@ body {
   right: 16px;
 }
 
-.model-buttn:hover{
-  .model-icon{
+.model-buttn:hover {
+  .model-icon {
     fill: #188ce8;
   }
 }
@@ -594,19 +655,16 @@ body {
 }
 
 .model-input:hover,
-.model-input:focus
-{
+.model-input:focus {
   outline: 1px solid #2196f3;
 }
 
 .model-input:hover + .model-pic,
-.model-input:focus + .model-pic
-{
+.model-input:focus + .model-pic {
   fill: #2196f3;
 }
 
-.model-pic
-{
+.model-pic {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -633,8 +691,7 @@ body {
 }
 
 .model-coment:hover,
-.model-coment:focus
-{
+.model-coment:focus {
   outline: 1px solid #2196f3;
 }
 
