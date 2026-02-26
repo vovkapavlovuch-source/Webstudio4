@@ -54,7 +54,7 @@
         <section class="hero">
             <div class="container">
                 <h2 class="hero-title">Ефективні рішення для вашого бізнесу</h2>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" data-modal-open type="button">Замовити послугу</button>
             </div>
         </section>
         <section class="company">
@@ -355,6 +355,46 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop" data-modal>
+        <div class="model">
+            <button class="model-buttn" data-modal-close type="button">
+                <svg class="model-icon">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="model-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="model-form">
+                <label class="model-label">Ім'я
+                    <input class="model-input" type="text" required >
+                    <svg class="model-pic">
+                        <use href="./images/symbol-defs.svg#icon-person-1"></use>
+                    </svg>
+                </label>
+                <label class="model-label">Телефон
+                    <input class="model-input" type="tell" required >
+                    <svg class="model-pic">
+                        <use href="./images/symbol-defs.svg#icon-phone-2"></use>
+                    </svg>
+                </label>
+                <label class="model-label">Пошта
+                    <input class="model-input" type="email" required>
+                    <svg class="model-pic">
+                        <use href="./images/symbol-defs.svg#icon-email-3"></use>
+                    </svg>
+                </label>
+                <label class="model-label">Коментар
+                    <textarea class="model-coment" placeholder="Введіть текст"></textarea>
+                </label>
+                <div class="model-box">
+                    <input class="model-checkbox" type="checkbox" required>
+                    <p class="model-text">Погоджуюся з розсилкою та приймаю</p>
+                    <a class="model-link" href="">Умови договору</a>
+                </div>
+                <button class="model-submit" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./js/model.js"></script>
 </body>
 
 </html>
