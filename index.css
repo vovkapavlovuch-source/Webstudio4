@@ -43,6 +43,8 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: #757575;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-smartphone {
@@ -50,12 +52,16 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: #757575;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item-svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item-svg:hover {
@@ -74,6 +80,8 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   width: 122px;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-page:hover {
@@ -82,6 +90,7 @@ body {
 
 .header-page:hover::after {
   opacity: 1;
+  visibility: visible;
 }
 
 .header-page::after {
@@ -93,6 +102,9 @@ body {
   height: 4px;
   transform: translateY(28px);
   opacity: 0;
+  visibility: hidden;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact {
@@ -101,6 +113,8 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   width: 122px;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -343,6 +357,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-social:hover {
@@ -365,6 +381,8 @@ body {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-title {
@@ -391,6 +409,8 @@ body {
 
 .regular-item {
   border: 1px solid #afb1b8;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-item:hover {
@@ -463,6 +483,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-item-svg {
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item-svg:hover {

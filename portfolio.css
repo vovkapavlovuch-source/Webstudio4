@@ -30,6 +30,8 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: #757575;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-smartphone {
@@ -37,12 +39,16 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: #757575;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item-svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item-svg:hover {
@@ -146,6 +152,8 @@ body {
   padding-right: 22px;
   background-color: #f5f4fa;
   border-radius: 4px;
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalog-page:hover {
@@ -163,6 +171,8 @@ body {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -170,6 +180,9 @@ body {
     1px 4px 6px 0 rgba(0, 0, 0, 0.16),
     0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  .portfolio-desk {
+    opacity: 1;
+  }
 }
 
 .portfolio-photo {
@@ -258,11 +271,6 @@ body {
   opacity: 0;
 }
 
-.portfolio-item:hover {
-  .portfolio-desk {
-    opacity: 1;
-  }
-}
 
 .footer-list {
   display: flex;
@@ -292,6 +300,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-item-svg {
+  transition: 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item-svg:hover {
