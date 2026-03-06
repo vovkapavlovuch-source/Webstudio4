@@ -518,14 +518,6 @@ body {
   margin-right: 12px;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .footer-box-subcribe {
   display: flex;
   position: relative;
@@ -560,6 +552,14 @@ body {
   margin-left: 10px;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /*  Модальне вікно */
 
 .backdrop {
@@ -578,6 +578,7 @@ body {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .model {

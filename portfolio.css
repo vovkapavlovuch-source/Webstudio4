@@ -263,6 +263,7 @@ body {
 
 .footer-box {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-title {
@@ -284,6 +285,69 @@ body {
 .container-svg {
   display: flex;
   align-items: baseline;
+}
+
+.footer-label {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  margin-top: 20px;
+  padding-left: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-box-subcribe {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-form
+{
+  width: 358px;
+}
+
+.footer-butn-subcribe {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: #2196f3;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+}
+
+.footer-telegram {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-left: 10px;
 }
 
 .container {
