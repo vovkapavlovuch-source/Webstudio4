@@ -100,6 +100,21 @@ body {
   color: #2196f3;
 }
 
+.header-page:hover::after {
+  opacity: 1;
+}
+
+.header-page::after {
+  content: "";
+  display: block;
+  background-color: #2196f3;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  transform: translateY(28px);
+  opacity: 0;
+}
+
 .catalog {
   padding-top: 94px;
   padding-bottom: 34px;
@@ -192,6 +207,10 @@ body {
   gap: 30px;
 }
 
+.portfolio-item {
+  position: relative;
+}
+
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -222,6 +241,27 @@ body {
   letter-spacing: 0.03em;
   color: #fff;
   margin-bottom: 9px;
+}
+
+.portfolio-desk {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.portfolio-item:hover {
+  .portfolio-desk {
+    opacity: 1;
+  }
 }
 
 .footer-list {
@@ -318,8 +358,7 @@ body {
   align-items: flex-end;
 }
 
-.footer-form
-{
+.footer-form {
   width: 358px;
 }
 

@@ -80,6 +80,21 @@ body {
   color: #2196f3;
 }
 
+.header-page:hover::after {
+  opacity: 1;
+}
+
+.header-page::after {
+  content: "";
+  display: block;
+  background-color: #2196f3;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  transform: translateY(28px);
+  opacity: 0;
+}
+
 .header-contact {
   font-weight: 500;
   font-size: 14px;
