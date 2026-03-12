@@ -186,6 +186,7 @@ body {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .portfolio-item:hover {
@@ -195,6 +196,7 @@ body {
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
   .portfolio-desk {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -211,14 +213,16 @@ body {
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  transition-property: opacity;
+  transition-property: opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
 }
 
 .portfolio-photo {
   width: 370px;
   height: 294px;
+  overflow: hidden;
 }
 
 .portfolio-title {
