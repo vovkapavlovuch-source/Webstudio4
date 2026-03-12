@@ -23,6 +23,9 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
   width: 122px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-envelope {
@@ -30,8 +33,9 @@ body {
   height: 12px;
   margin-right: 10px;
   fill: #757575;
-  transition: 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-smartphone {
@@ -39,8 +43,9 @@ body {
   height: 16px;
   margin-right: 10px;
   fill: #757575;
-  transition: 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item-svg {
@@ -67,6 +72,9 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   width: 122px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-web {
@@ -119,6 +127,9 @@ body {
   height: 4px;
   transform: translateY(28px);
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalog {
@@ -152,8 +163,9 @@ body {
   padding-right: 22px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  transition: 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .catalog-page:hover {
@@ -171,8 +183,9 @@ body {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
-  transition: 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -183,6 +196,24 @@ body {
   .portfolio-desk {
     opacity: 1;
   }
+}
+
+.portfolio-desk {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-photo {
@@ -256,22 +287,6 @@ body {
   margin-bottom: 9px;
 }
 
-.portfolio-desk {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 156%;
-  letter-spacing: 0.03em;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 63px 24px;
-  background: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-}
-
-
 .footer-list {
   display: flex;
   flex-direction: column;
@@ -303,8 +318,10 @@ body {
 }
 
 .footer-item-svg {
-  transition: 250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item-svg:hover {
