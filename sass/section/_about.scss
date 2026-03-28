@@ -1,0 +1,46 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.about-list {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+.about-item {
+  position: relative;
+}
+
+.about-photo {
+  width: 370px;
+  height: 294px;
+}
+
+.about-text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  padding-top: 27px;
+}
+
+.about-text {
+  background-color: #2f303ab7;
+  width: 370px;
+  height: 70px;
+}
