@@ -2,41 +2,42 @@
   padding-top: 200px;
   padding-bottom: 200px;
   background-image:
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    linear-gradient($gradient, $gradient),
     url("../images/background-hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.hero-title {
+  &__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 136%;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: $main-color;
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
 
-.hero-button {
-  background: #2196f3;
+&__button {
+  background: $accent-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #fff;
+  color: $main-color;
   width: 216px;
   height: 50px;
   border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: $input-shadow;
   margin-left: auto;
   margin-right: auto;
   display: block;
   border: none;
 }
+}
+

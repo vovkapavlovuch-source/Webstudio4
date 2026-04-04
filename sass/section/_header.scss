@@ -1,117 +1,121 @@
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-}
 
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.header-web {
-  color: #2196f3;
-}
-
-.header-studio {
-  color: #000;
-}
-
-.header-logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-.header-nav {
-  margin-left: 93px;
-  margin-right: 344px;
-}
-
-.header-list {
-  display: flex;
-  gap: 50px;
-}
-
-.header-envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: #757575;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-smartphone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: #757575;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-item-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.header-item-svg:hover {
-  .header-contact {
-    color: #2196f3;
+  &__container {
+    display: flex;
+    align-items: center;
   }
-  .header-envelope,
-  .header-smartphone {
-    fill: #2196f3;
+
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: $accent-color;
   }
-}
 
-.header-page {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #212121;
-  width: 122px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__web {
+    color: $accent-color;
+  }
 
-.header-page:hover {
-  color: #2196f3;
-}
+  &__studio {
+    color: #000;
+  }
 
-.header-page:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
+  &__nav {
+    margin-left: 93px;
+    margin-right: 344px;
+  }
 
-.header-page::after {
-  content: "";
-  display: block;
-  background-color: #2196f3;
-  width: 100%;
-  border-radius: 2px;
-  height: 4px;
-  transform: translateY(28px);
-  opacity: 0;
-  visibility: hidden;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
 
-.header-contact {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: #757575;
-  width: 122px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &__page {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    width: 122px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:hover::after {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $accent-color;
+      width: 100%;
+      border-radius: 2px;
+      height: 4px;
+      transform: translateY(28px);
+      opacity: 0;
+      visibility: hidden;
+      transition-property: opacity;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: $accent-color;
+
+      .header__contact {
+        color: $accent-color;
+      }
+
+      .header__envelope,
+      .header__smartphone {
+        fill: $accent-color;
+      }
+    }
+  }
+
+  &__envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__contact {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    width: 122px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+  &__smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
