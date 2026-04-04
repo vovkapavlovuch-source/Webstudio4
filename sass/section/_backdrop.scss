@@ -1,3 +1,5 @@
+@use"../base/variables" as *;
+
 .backdrop {
   background-color: $backdrop-main;
   position: fixed;

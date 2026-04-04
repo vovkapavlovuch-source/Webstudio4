@@ -1,3 +1,5 @@
+@use"../base/variables" as *;
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -177,7 +179,7 @@
 
     &:hover {
       box-shadow:
-        $shadow-card;
+        $footer-shadow;
 
       .portfolio__desk {
         opacity: 1;
