@@ -10,7 +10,7 @@
   }
 
   &__logo {
-    font-family: "Raleway";
+    font-family: $font-family1;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -22,7 +22,7 @@
   }
 
   &__studio {
-    color: #000;
+    color: $logo-color;
   }
 
   &__nav {
@@ -39,7 +39,7 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: $title-color;
     width: 122px;
     transition-property: color;
     transition-duration: 250ms;
@@ -93,7 +93,7 @@
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: #757575;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,7 +103,7 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: $text-color;
     width: 122px;
     transition-property: color;
     transition-duration: 250ms;
@@ -115,7 +115,7 @@
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: #757575;
+    fill: $text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

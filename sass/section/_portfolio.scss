@@ -10,7 +10,7 @@
   }
 
   &__logo {
-    font-family: "Raleway";
+    font-family: $font-family1;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -264,7 +264,7 @@
   }
 
   &__logo {
-    font-family: "Raleway";
+    font-family: $font-family1;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -277,7 +277,7 @@
   }
 
   &__studio {
-    color: #fff;
+    color: $main-color;
   }
 
   &__text {
@@ -310,7 +310,7 @@
   }
 
   &__title {
-    font-family: "Raleway";
+    font-family: $font-family1;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;

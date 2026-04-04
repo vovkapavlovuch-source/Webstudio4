@@ -27,7 +27,7 @@
   &__model {
     width: 534px;
     height: 587px;
-    background-color: #fff;
+    background-color: $main-color;
     border-radius: 4px;
     box-shadow:
       $model;
@@ -71,7 +71,6 @@
   }
 
   &__title {
-    font-family: "Roboto";
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
@@ -81,7 +80,6 @@
   }
 
   &__label {
-    font-family: "Roboto";
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.01em;

@@ -1,6 +1,7 @@
+@use"../base/variables" as *;
 
 body {
-  font-family: "Roboto";
+  font-family: $font-family;
 }
 
 h1, h2, h3, p 
