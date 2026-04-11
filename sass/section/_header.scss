@@ -1,3 +1,4 @@
+@use"../utiles/mixin" as *;
 @use"../base/variables" as *;
 
 .header {
@@ -41,9 +42,7 @@
     letter-spacing: 0.02em;
     color: $title-color;
     width: 122px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: color);
 
     &:hover {
       color: $accent-color;
@@ -64,16 +63,12 @@
       transform: translateY(28px);
       opacity: 0;
       visibility: hidden;
-      transition-property: opacity;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @include transform($property: opacity);
     }
   }
 
   &__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox();
 
     &:hover {
       color: $accent-color;
@@ -94,9 +89,7 @@
     height: 12px;
     margin-right: 10px;
     fill: $text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: fill);
   }
 
   &__contact {
@@ -105,10 +98,7 @@
     letter-spacing: 0.02em;
     color: $text-color;
     width: 122px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    @include transform($property: color);
   }
 
   &__smartphone {
@@ -116,8 +106,6 @@
     height: 16px;
     margin-right: 10px;
     fill: $text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: fill);
   }
 }

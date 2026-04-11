@@ -1,3 +1,4 @@
+@use"../utiles/mixin" as *;
 @use"../base/variables" as *;
 
 .regular {
@@ -9,22 +10,17 @@
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align: center;
-    color: #212121;
+    color: $title-color;
     margin-bottom: 50px;
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    @include flexbox($gap: 30px);
   }
 
   &__item {
     border: 1px solid #afb1b8;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: border-color);
 
     &:hover {
       border-color: $accent-color;
@@ -43,8 +39,6 @@
     margin-bottom: 16px;
     margin-left: 32px;
     margin-right: 32px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: fill);
   }
 }

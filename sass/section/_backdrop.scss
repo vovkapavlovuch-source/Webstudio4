@@ -1,3 +1,4 @@
+@use"../utiles/mixin" as *;
 @use"../base/variables" as *;
 
 .backdrop {
@@ -7,9 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexbox();
   opacity: 1;
 
   &__hidden {
@@ -18,9 +17,7 @@
     visibility: hidden;
 
     &__hidden &__model {
-      transform: scale(0);
-      transition-duration: 250ms;
-      transition-property: transform;
+      @include transform($transform: scale(0), $property: transform);
     }
   }
 
@@ -35,9 +32,7 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
-    transform: scale(1);
-    transition-duration: 250ms;
-    transition-property: transform;
+    @include transform($transform: scale(1), $property: transform);
   }
 
   &__buttn {
@@ -46,9 +41,7 @@
     border-radius: 50%;
     border: none;
     outline: solid $backdrop-buttn;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox();
     background-color: transparent;
     position: absolute;
     top: 10px;
@@ -65,9 +58,7 @@
     width: 18px;
     height: 18px;
     fill: $logo-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: fill);
   }
 
   &__title {
@@ -98,9 +89,8 @@
     margin-bottom: 10px;
     border: none;
     padding-left: 43px;
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: outline);
+
 
     &:hover,
     &:focus {
@@ -120,9 +110,7 @@
     top: 30px;
     left: 12px;
     fill: $title-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: fill);
   }
 
   &__coment {
@@ -139,9 +127,7 @@
     font-size: 12px;
     letter-spacing: 0.01em;
     color: $backdrop-coment;
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: outline);
 
     &:hover,
     &:focus {
@@ -150,9 +136,7 @@
   }
 
   &__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox();
   }
 
   &__checkbox {

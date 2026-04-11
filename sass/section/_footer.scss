@@ -1,3 +1,4 @@
+@use"../utiles/mixin" as *;
 @use"../base/variables" as *;
 
 .footer {
@@ -24,7 +25,7 @@
   }
 
   &__studio {
-    color: #fff;
+    color: $main-color;
   }
 
   &__text {
@@ -38,9 +39,7 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+    @include flexbox($direction: column, $gap: 9px, $align: none, $justify: none);
   }
 
   &__page {
@@ -67,16 +66,15 @@
   }
 
   &__group {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
+    @include flexbox($align: baseline, $justify: none, $gap: 10px);
   }
 
   &__icon {
     border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: background-color);
 
     &:hover {
       border-radius: 50%;
@@ -91,9 +89,7 @@
     background-color: $footer-link;
     width: 44px;
     height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox();
   }
 
   &__svg {
@@ -149,9 +145,7 @@
     box-shadow: $input-shadow;
     background: $accent-color;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox();
   }
 
   &__telegram {
@@ -161,8 +155,3 @@
     margin-left: 10px;
   }
 }
-
-
-
-
-

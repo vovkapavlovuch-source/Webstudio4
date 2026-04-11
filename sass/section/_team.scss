@@ -1,3 +1,4 @@
+@use"../utiles/mixin" as *;
 @use"../base/variables" as *;
 
 .team {
@@ -53,11 +54,12 @@
   }
 
   &__group {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     margin-bottom: 42px;
     margin-left: 32px;
-    gap: 10px;
+    // gap: 10px;
+    @include flexbox($justify: none, $gap: 10px);
   }
 
   &__member {
@@ -65,21 +67,21 @@
     width: 44px;
     height: 44px;
     background-color: $member;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // transition-property: background-color;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include flexbox();
+    @include transform($property: background-color);
 
     &:hover {
       border-radius: 50%;
       width: 44px;
       height: 44px;
       background-color: $accent-color;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexbox();
 
       .team__social {
         fill: $main-color;
@@ -90,12 +92,8 @@
   &__social {
     width: 20px;
     height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox();
     fill: $client-border;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: fill);
   }
 }

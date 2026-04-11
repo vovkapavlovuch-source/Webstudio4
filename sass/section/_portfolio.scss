@@ -1,126 +1,5 @@
+@use"../utiles/mixin" as *;
 @use"../base/variables" as *;
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
-  &__container {
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo {
-    font-family: $font-family1;
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    color: $accent-color;
-  }
-
-  &__web {
-    color: $accent-color;
-  }
-
-  &__studio {
-    color: $logo-color;
-  }
-
-  &__nav {
-    margin-left: 93px;
-    margin-right: 344px;
-  }
-
-  &__list {
-    display: flex;
-    gap: 50px;
-  }
-
-  &__page {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: $title-color;
-    width: 122px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      color: $accent-color;
-    }
-
-    &:hover::after {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      background-color: $accent-color;
-      width: 100%;
-      border-radius: 2px;
-      height: 4px;
-      transform: translateY(28px);
-      opacity: 0;
-      visibility: hidden;
-      transition-property: opacity;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-
-  &__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-      color: $accent-color;
-
-      .header__contact {
-        color: $accent-color;
-      }
-
-      .header__envelope,
-      .header__smartphone {
-        fill: $accent-color;
-      }
-    }
-  }
-
-  &__envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: $text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__contact {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: $text-color;
-    width: 122px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  }
-
-  &__smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: $text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
 
 .catalog {
   padding-top: 94px;
@@ -152,9 +31,7 @@
     padding-right: 22px;
     background-color: $team-bg;
     border-radius: 4px;
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: background-color color box-shadow);
 
     &:hover {
       background-color: $accent-color;
@@ -172,9 +49,7 @@
 
   &__item {
     flex-basis: calc((100% - 60px) / 3);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: box-shadow);
     position: relative;
 
     &:hover {
@@ -189,10 +64,8 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 34px;
-    gap: 30px;
+    @include flexbox($wrap: wrap, $gap: 30px);
   }
 
   &__wrap {
@@ -218,9 +91,10 @@
     padding: 63px 24px;
     background: $card-owerlay;
     opacity: 0;
-    transition-property: opacity, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // transition-property: opacity, transform;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include transform($property: opacity transform);
     transform: translateY(100%);
   }
 
@@ -250,167 +124,5 @@
   &__container {
     display: flex;
     align-items: center;
-  }
-}
-
-.footer {
-  background: $footer-bg;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  &__container {
-    display: flex;
-    align-items: baseline;
-  }
-
-  &__logo {
-    font-family: $font-family1;
-    font-weight: 700;
-    font-size: 26px;
-    letter-spacing: 0.03em;
-    color: $accent-color;
-    margin-bottom: 20px;
-  }
-
-  &__web {
-    color: $accent-color;
-  }
-
-  &__studio {
-    color: $main-color;
-  }
-
-  &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: $main-color;
-    margin-bottom: 9px;
-    width: 231px;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
-  }
-
-  &__page {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: $footer-contact;
-  }
-
-  &__box {
-    margin-left: 70px;
-    margin-right: 93px;
-  }
-
-  &__title {
-    font-family: $font-family1;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-color;
-    margin-bottom: 20px;
-  }
-
-  &__group {
-    display: flex;
-    align-items: baseline;
-    gap: 10px;
-  }
-
-  &__icon {
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-      border-radius: 50%;
-      background-color: $accent-color;
-      width: 44px;
-      height: 44px;
-    }
-  }
-
-  &__link {
-    border-radius: 50%;
-    background-color: $footer-link;
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__svg {
-    width: 20px;
-    height: 20px;
-    fill: $main-color;
-  }
-
-  &__block {
-    display: flex;
-    align-items: flex-end;
-  }
-
-  &__form {
-    width: 370px;
-  }
-
-  &__label {
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $main-color;
-  }
-
-  &__input {
-    border: 1px solid $footer-input;
-    border-radius: 4px;
-    width: 358px;
-    height: 50px;
-    box-shadow: $input-shadow;
-    background: $footer-background;
-    margin-top: 20px;
-    padding-left: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: 0.03em;
-    color: $footer-contact;
-    margin-right: 12px;
-  }
-
-  &__butn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 188%;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: $main-color;
-    border-radius: 4px;
-    width: 200px;
-    height: 50px;
-    box-shadow: $input-shadow;
-    background: $accent-color;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__telegram {
-    width: 24px;
-    height: 24px;
-    fill: $main-color;
-    margin-left: 10px;
   }
 }
