@@ -28,7 +28,9 @@
 
   &__nav {
     margin-left: 93px;
-    margin-right: 344px;
+    margin-right: 315px;
+
+
   }
 
   &__list {
@@ -97,7 +99,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     color: $text-color;
-    width: 122px;
+  
     @include transform($property: color);
   }
 
