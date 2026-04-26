@@ -2,8 +2,15 @@
 @use"../base/variables" as *;
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 10px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
 
   &__container {
     display: flex;
@@ -13,9 +20,13 @@
   &__logo {
     font-family: $font-family1;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.03em;
     color: $accent-color;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
   }
 
   &__web {
@@ -29,8 +40,11 @@
   &__nav {
     margin-left: 93px;
     margin-right: 315px;
+    display: none;
 
-
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
   }
 
   &__list {
@@ -99,7 +113,7 @@
     font-size: 14px;
     letter-spacing: 0.02em;
     color: $text-color;
-  
+    width: 122px;
     @include transform($property: color);
   }
 
