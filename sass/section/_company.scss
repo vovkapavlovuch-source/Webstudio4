@@ -2,18 +2,26 @@
 @use"../base/variables" as *;
 
 .company {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__container {
-    // display: flex;
-    // align-items: center;
     @include flexbox($justify: none);
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__title {
@@ -23,6 +31,18 @@
     text-transform: uppercase;
     color: $title-color;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      align-items: flex-start;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+      ;
+    }
   }
 
   &__text {
@@ -31,6 +51,15 @@
     line-height: 171%;
     letter-spacing: 0.03em;
     color: $text-color;
+    max-width: 450px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__satellite::before {
@@ -38,11 +67,20 @@
     background-color: $team-bg;
     background-image: url("../images/satellite-dish.png");
     display: block;
-    width: 270px;
+    border-radius: 4px;
+    width: 450px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__clock::before {
@@ -50,11 +88,19 @@
     background-color: $team-bg;
     background-image: url("../images/clock.png");
     display: block;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__diagram::before {
@@ -62,11 +108,19 @@
     background-color: $team-bg;
     background-image: url("../images/diagram.png");
     display: block;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 
   &__astronaut::before {
@@ -74,10 +128,18 @@
     background-color: $team-bg;
     background-image: url("../images/astronaut.png");
     display: block;
-    width: 270px;
+    width: 450px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
 }

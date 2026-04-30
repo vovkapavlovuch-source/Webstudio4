@@ -2,35 +2,58 @@
 @use"../base/variables" as *;
 
 .team {
-  background: $team-bg;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: $team-bg;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
-  }
 
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+    }
+  }
 
   &__list {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
     gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      margin-top: 50px;
+    }
   }
 
   &__item {
     background-color: $main-color;
-    box-shadow:
-      model;
+    box-shadow: model;
   }
 
   &__photo {
-    width: 270px;
-    height: 260px;
+    width: 450px;
+    height: 460px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      height: 260px;
+    }
   }
 
   &__name {
@@ -54,12 +77,17 @@
   }
 
   &__group {
-    // display: flex;
-    // align-items: center;
     margin-bottom: 42px;
-    margin-left: 32px;
-    // gap: 10px;
+    margin-left: 122px;
     @include flexbox($justify: none, $gap: 10px);
+
+      @media screen and (min-width: 768px) {
+      margin-left: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 32px;
+    }
   }
 
   &__member {
@@ -67,12 +95,6 @@
     width: 44px;
     height: 44px;
     background-color: $member;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // transition-property: background-color;
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include flexbox();
     @include transform($property: background-color);
 

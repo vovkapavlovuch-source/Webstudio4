@@ -2,24 +2,42 @@
 @use"../base/variables" as *;
 
 .regular {
-  padding-top: 86px;
-  padding-bottom: 110px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 86px;
+    padding-bottom: 110px;
+  }
 
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+
   }
 
   &__list {
-    @include flexbox($gap: 30px);
+    @include flexbox($wrap: wrap, $gap: 30px);
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+
   }
 
   &__item {
     border: 1px solid #afb1b8;
+    width: 210px;
+    height: 92px;
     @include transform($property: border-color);
 
     &:hover {
@@ -29,6 +47,14 @@
         fill: $accent-color;
       }
     }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+    }
   }
 
   &__svg {
@@ -37,8 +63,22 @@
     fill: $client-border;
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 52px;
+    margin-right: 52px;
     @include transform($property: fill);
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-left: 32px;
+      margin-right: 32px;
+    }
   }
 }
