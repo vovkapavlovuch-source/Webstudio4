@@ -26,13 +26,11 @@
   }
 
   &__mobile {
-    @media screen and (min-width: 480px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-bottom: 60px;
-    }
 
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -151,7 +149,6 @@
     align-items: center;
 
     @media screen and (min-width: 1200px) {
-      display: flex;
       flex-direction: row;
       align-items: flex-end;
     }
@@ -176,6 +173,7 @@
       display: block;
       flex-direction: row;
       align-items: end;
+      margin-bottom: 0;
     }
 
   }
@@ -195,6 +193,7 @@
     letter-spacing: 0.03em;
     color: $footer-contact;
     margin-right: 12px;
+    align-items: center;
   }
 
   &__butn {
