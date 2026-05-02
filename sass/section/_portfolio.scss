@@ -2,15 +2,46 @@
 @use"../base/variables" as *;
 
 .catalog {
-  padding-top: 94px;
-  padding-bottom: 34px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 34px;
+  }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    justify-content: center;
+    justify-content: start;
+    align-items: center;
     border: none;
     border-radius: 4px;
+    max-width: 326px;
+    row-gap: 15px;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+      max-width: none;
+      justify-content: center;
+      gap: 18px;
+      row-gap: none;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      max-width: none;
+      justify-content: center;
+      gap: 8px;
+      row-gap: none;
+    }
+
   }
 
   &__item {
@@ -20,7 +51,7 @@
   &__page {
     font-weight: 500;
     font-size: 16px;
-    line-height: 162%;
+    line-height: 163%;
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
@@ -36,21 +67,31 @@
     &:hover {
       background-color: $accent-color;
       color: $main-color;
-      box-shadow:
-        $catalog-color;
+      box-shadow: $catalog-color;
     }
-
   }
 
 }
 
 .portfolio {
-  padding-bottom: 114px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 114px;
+  }
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 0px) / 1);
     @include transform($property: box-shadow);
     position: relative;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
 
     &:hover {
       box-shadow:
@@ -64,19 +105,43 @@
   }
 
   &__list {
-    margin-top: 34px;
+    margin-top: 0;
     @include flexbox($wrap: wrap, $gap: 30px);
+
+    @media screen and (min-width: 768px) {
+      @include flexbox($justify: flex-start, $wrap: wrap, $gap: 30px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin-top: 34px;
+      @include flexbox($justify: none, $wrap: wrap, $gap: 30px);
+    }
   }
 
   &__wrap {
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__photo {
-    width: 370px;
-    height: 294px;
+
+    width: 450px;
+    height: 404px;
     overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+      height: 294px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+      height: 294px;
+    }
   }
 
   &__desk {
@@ -91,9 +156,6 @@
     padding: 63px 24px;
     background: $card-owerlay;
     opacity: 0;
-    // transition-property: opacity, transform;
-    // transition-duration: 250ms;
-    // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include transform($property: opacity transform);
     transform: translateY(100%);
   }
