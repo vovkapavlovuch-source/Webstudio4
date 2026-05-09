@@ -13,11 +13,12 @@
     align-items: center;
 
     @media screen and (min-width: 768px) {
-      display: flex;
+      display: block;
       flex-direction: row;
     }
 
     @media screen and (min-width: 1200px) {
+      display: flex;
       align-items: baseline;
       flex-direction: row;
       justify-content: none;
@@ -25,12 +26,31 @@
     }
   }
 
-  &__mobile {
+  &__tablet {
+    display: block;
+
+    @media screen and (min-width: 768px) {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    
+
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+      
 
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -38,6 +58,7 @@
       justify-content: start;
       align-items: start;
       margin-bottom: 0;
+      margin-right: 0;
     }
   }
 
@@ -110,11 +131,12 @@
     text-transform: uppercase;
     color: $main-color;
     margin-bottom: 20px;
-    margin-left: 40px;
+    display: flex;
+    justify-content: center;
   }
 
   &__group {
-    @include flexbox($align: baseline, $justify: none, $gap: 10px);
+    @include flexbox($align: baseline, $justify: center, $gap: 10px);
   }
 
   &__icon {
@@ -181,7 +203,7 @@
   &__input {
     border: 1px solid $footer-input;
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     box-shadow: $input-shadow;
     background: $footer-background;
@@ -194,6 +216,15 @@
     color: $footer-contact;
     margin-right: 12px;
     align-items: center;
+    @media screen and (min-width: 768px)
+    {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px)
+    {
+      width: 358px;
+    }
   }
 
   &__butn {
