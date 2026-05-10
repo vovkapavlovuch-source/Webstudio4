@@ -41,6 +41,7 @@
     &__list {
         display: flex;
         flex-direction: column;
+        
         gap: 35px;
         margin-bottom: 302px;
     }
@@ -90,6 +91,7 @@
 
     &__socials {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
