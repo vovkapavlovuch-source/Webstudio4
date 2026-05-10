@@ -115,11 +115,13 @@
 
   &__box {
     margin-bottom: 60px;
+    margin-top: 12px;
 
     @media screen and (min-width: 1200px) {
       margin-left: 70px;
       margin-right: 93px;
       margin-bottom: 0;
+      margin-top: 12px;
     }
   }
 
@@ -133,6 +135,10 @@
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
   }
 
   &__group {
@@ -177,7 +183,17 @@
   }
 
   &__form {
-    width: 370px;
+    width: 100%;
+
+
+    @media screen and (min-width: 480px)
+    {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 370px;
+    }
   }
 
   &__label {
@@ -214,9 +230,8 @@
     line-height: 125%;
     letter-spacing: 0.03em;
     color: $footer-contact;
-    align-items: center;
 
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 480px)
     {
       width: 450px;
     }
