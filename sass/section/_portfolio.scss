@@ -43,11 +43,7 @@
     }
 
   }
-
-  &__item {
-    max-width: 575px;
-  }
-
+  
   &__page {
     font-weight: 500;
     font-size: 16px;
@@ -55,7 +51,6 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $title-color;
-    max-width: 575px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
@@ -75,12 +70,26 @@
 
 .portfolio {
   padding-bottom: 60px;
+  padding-top: 34px;
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 114px;
   }
 
+  &__item:nth-child(1) {
+    padding-bottom: 0;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 36px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
+    }
+  }
+
   &__item {
+    border: 1px solid #eee;
     flex-basis: calc((100% - 0px) / 1);
     @include transform($property: box-shadow);
     position: relative;
@@ -114,7 +123,6 @@
 
     @media screen and (min-width: 1200px) {
       display: block;
-      margin-top: 34px;
       @include flexbox($justify: none, $wrap: wrap, $gap: 30px);
     }
   }
@@ -128,7 +136,6 @@
   }
 
   &__photo {
-
     width: 450px;
     height: 404px;
     overflow: hidden;
@@ -161,8 +168,8 @@
   }
 
   &__box {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
   }
